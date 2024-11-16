@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="TestCases.TC002_LoginTest">
+        <methods>
+          <include name="LoginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestCases.TC002_LoginTest -->
+      <class name="TestCases.TCC001_AccountRegisterPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="TestRegister"/>
+        </methods>
+      </class> <!-- TestCases.TCC001_AccountRegisterPage -->
+      <class name="TestCases.TC003_SearchBox_Testing">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="Test_SearchBox"/>
+        </methods>
+      </class> <!-- TestCases.TC003_SearchBox_Testing -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Demo Suite] -->
